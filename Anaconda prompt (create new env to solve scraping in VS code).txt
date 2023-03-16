@@ -1,0 +1,207 @@
+
+Anaconda prompt
+
+(base) C:\Users\eaton>conda create --abcenv
+usage: conda-script.py [-h] [-V] command ...
+conda-script.py: error: unrecognized arguments: --abcenv
+
+(base) C:\Users\eaton>conda create --abc myenv
+usage: conda-script.py [-h] [-V] command ...
+conda-script.py: error: unrecognized arguments: --abc
+
+(base) C:\Users\eaton>conda create --name aenv
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.1
+  latest version: 4.11.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\eaton\Anaconda3\envs\aenv
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate aenv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\eaton>conda activate aenv
+
+(aenv) C:\Users\eaton>cd Documents
+
+(aenv) C:\Users\eaton\Documents>cd "Tecky programming"
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+Traceback (most recent call last):
+  File "C:\Users\eaton\Documents\Tecky programming\puppeteer2.py", line 1, in <module>
+    from pyppeteer import launch
+ModuleNotFoundError: No module named 'pyppeteer'
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python3 -m pip install pyppeteer
+Requirement already satisfied: pyppeteer in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (1.0.2)
+Requirement already satisfied: importlib-metadata>=1.4 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from pyppeteer) (4.10.1)
+Requirement already satisfied: pyee<9.0.0,>=8.1.0 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from pyppeteer) (8.2.2)
+Requirement already satisfied: urllib3<2.0.0,>=1.25.8 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from pyppeteer) (1.26.8)
+Requirement already satisfied: tqdm<5.0.0,>=4.42.1 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from pyppeteer) (4.62.3)
+Requirement already satisfied: certifi>=2021 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from pyppeteer) (2021.10.8)
+Requirement already satisfied: websockets<11.0,>=10.0 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from pyppeteer) (10.1)
+Requirement already satisfied: appdirs<2.0.0,>=1.4.3 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from pyppeteer) (1.4.4)
+Requirement already satisfied: zipp>=0.5 in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from importlib-metadata>=1.4->pyppeteer) (3.7.0)
+Requirement already satisfied: colorama in c:\users\eaton\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages (from tqdm<5.0.0,>=4.42.1->pyppeteer) (0.4.4)
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\eaton\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip' command.
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>pip list
+Package    Version
+---------- -------
+pip        21.2.4
+setuptools 58.1.0
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\eaton\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>conda list
+# packages in environment at C:\Users\eaton\Anaconda3\envs\aenv:
+#
+# Name                    Version                   Build  Channel
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>pip install pyppeteer
+Collecting pyppeteer
+  Using cached pyppeteer-1.0.2-py3-none-any.whl (83 kB)
+Collecting certifi>=2021
+  Using cached certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+Collecting importlib-metadata>=1.4
+  Using cached importlib_metadata-4.10.1-py3-none-any.whl (17 kB)
+Collecting urllib3<2.0.0,>=1.25.8
+  Using cached urllib3-1.26.8-py2.py3-none-any.whl (138 kB)
+Collecting tqdm<5.0.0,>=4.42.1
+  Using cached tqdm-4.62.3-py2.py3-none-any.whl (76 kB)
+Collecting pyee<9.0.0,>=8.1.0
+  Using cached pyee-8.2.2-py2.py3-none-any.whl (12 kB)
+Collecting websockets<11.0,>=10.0
+  Using cached websockets-10.1-cp310-cp310-win_amd64.whl (97 kB)
+Collecting appdirs<2.0.0,>=1.4.3
+  Using cached appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.7.0-py3-none-any.whl (5.3 kB)
+Collecting colorama
+  Using cached colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Installing collected packages: zipp, colorama, websockets, urllib3, tqdm, pyee, importlib-metadata, certifi, appdirs, pyppeteer
+Successfully installed appdirs-1.4.4 certifi-2021.10.8 colorama-0.4.4 importlib-metadata-4.10.1 pyee-8.2.2 pyppeteer-1.0.2 tqdm-4.62.3 urllib3-1.26.8 websockets-10.1 zipp-3.7.0
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\eaton\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>pip list
+Package            Version
+------------------ ---------
+appdirs            1.4.4
+certifi            2021.10.8
+colorama           0.4.4
+importlib-metadata 4.10.1
+pip                21.2.4
+pyee               8.2.2
+pyppeteer          1.0.2
+setuptools         58.1.0
+tqdm               4.62.3
+urllib3            1.26.8
+websockets         10.1
+zipp               3.7.0
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\eaton\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+sys:1: RuntimeWarning: coroutine 'launch' was never awaited
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+  File "C:\Users\eaton\Documents\Tecky programming\puppeteer2.py", line 3
+    browser = await launch()
+              ^^^^^^^^^^^^^^
+SyntaxError: 'await' outside function
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:7: RuntimeWarning: coroutine 'main' was never awaited
+  main()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:7: RuntimeWarning: coroutine 'main' was never awaited
+  main()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:8: RuntimeWarning: coroutine 'main' was never awaited
+  main()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>pip install asyncio
+Collecting asyncio
+  Downloading asyncio-3.4.3-py3-none-any.whl (101 kB)
+     |████████████████████████████████| 101 kB 6.8 MB/s
+Installing collected packages: asyncio
+Successfully installed asyncio-3.4.3
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\eaton\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:8: RuntimeWarning: coroutine 'main' was never awaited
+  main()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:8: DeprecationWarning: There is no current event loop
+  asyncio.get_event_loop().run_until_complete(main())
+[INFO] Starting Chromium download.
+100%|███████████████████████████████████████████████████████████████████████████████| 137M/137M [00:02<00:00, 50.5Mb/s]
+[INFO] Beginning extraction
+[INFO] Chromium extracted to: C:\Users\eaton\AppData\Local\pyppeteer\pyppeteer\local-chromium\588429
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:8: DeprecationWarning: There is no current event loop
+  asyncio.get_event_loop().run_until_complete(main())
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:8: DeprecationWarning: There is no current event loop
+  asyncio.get_event_loop().run_until_complete(main())
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:11: DeprecationWarning: There is no current event loop
+  asyncio.get_event_loop().run_until_complete(main())
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer.py
+  File "C:\Users\eaton\Documents\Tecky programming\puppeteer.py", line 4
+    browser = await launch()
+              ^^^^^^^^^^^^^^
+SyntaxError: 'await' outside function
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>python puppeteer2.py
+C:\Users\eaton\Documents\Tecky programming\puppeteer2.py:11: DeprecationWarning: There is no current event loop
+  asyncio.get_event_loop().run_until_complete(main())
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>conda env list
+# conda environments:
+#
+base                     C:\Users\eaton\Anaconda3
+aenv                  *  C:\Users\eaton\Anaconda3\envs\aenv
+myenv                    C:\Users\eaton\Anaconda3\envs\myenv
+
+
+(aenv) C:\Users\eaton\Documents\Tecky programming>
